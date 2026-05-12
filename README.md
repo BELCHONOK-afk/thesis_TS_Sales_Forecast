@@ -175,14 +175,14 @@
                            FastAPI
                               ↓
          ┌────────────────────┼────────────────────┐
-         ↓                    ↓                    ↓
-      Postgres             MinIO/S3             MLflow
- история прогнозов    данные/модели/artifacts  tracking экспериментов
+         ↓                                        ↓
+      MinIO/S3                                    MLflow
+    данные/модели/artifacts              tracking экспериментов
 
-                              ↑
-                              │
-                        Training Pipeline
-                 (LightGBM / XGBoost training)
+          ↑
+          │
+Training Pipeline
+(LightGBM / XGBoost training)                    
 ```
 
 ---
